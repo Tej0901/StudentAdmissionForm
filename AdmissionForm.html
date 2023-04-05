@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1" />
+<title>Admission Form</title>
+<link rel="icon" type="image/x-icon" href="/Users/teja-pt7068/Downloads/admForm.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Student Admission  Form</h1>
+	<form name="myform"  action="Response.html">
+		<div class="container">
+		<fieldset>
+				<label for="fname">First Name </label>
+				<input type="text" id="fname" name="firstname" placeholder="Your first name" maxlength="40" required>
+
+				<label for="lname">Last Name </label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name" maxlength="20" required>
+
+				<label for="email">Email Address </label>
+				<input type="email" id="email" name="email" placeholder="Your email address" required>
+
+				<label for="phone">Phone Number </label>
+				<input type="tel" id="phoneNo" name="phoneNo" placeholder="Your phone number" title="Error Message" pattern="[1-9]{1}[0-9]{9}"> <br><br>
+				
+				<label for="checkin">Date-Of-Birth </label>
+				<input type="date" id="checkin" name="checkin" required><br><br>
+				
+				<label for="">BatchYear </label>
+				<input type="number" id="age" name="age" placeholder="your batch Year please" value="2023" required><br><br>
+				
+				<label for="choosenDept">Department</label>
+				<select id="roomtype" name="roomtype" >
+					<option value="">--Please select a preferred Department--</option>
+					<option value="">ECE</option>
+					<option value="">CSE</option>
+					<option value="">CIVIL</option>
+					<option value="">MECH</option>
+					<option value="">EEE</option>
+				</select><br><br>
+				<label for="remarks">Remarks</label>
+				<textarea id="remarks" name="remarks" placeholder="Enter any additional Remarks or requests here...">
+				</textarea>
+			</fieldset>
+			</div>
+		<br><br>
+		<input type="submit" value="Submit the Form">
+	</form>
+	<div class="footer">
+        
+        <b><br><br>@Copyright Teja-pt7068 </b> <b>2023- All Right Reserved. </b> 
+        </div>
+
+</body>
+</html>
