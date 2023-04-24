@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1" />
+<title>Admission Form</title>
+<link rel="icon" type="image/x-icon" href="/Users/teja-pt7068/Downloads/admForm.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Student Admission  Form</h1>
+	<form name="myform"  action="response.html" target="_self">
+		<div class="container">
+		<fieldset>
+				<label for="fname">Candidate's First Name </label>
+				<input type="text" title="As Per Adhaar" id="fname" name="firstname" placeholder="Your first name" maxlength="40" required>
+
+				<label for="lname">Candidate's Last Name </label>
+				<input type="text" title="As Per Adhaar" id="lname" name="lastname" placeholder="Your last name" maxlength="20" required>
+
+				<label for="email">Email Address </label>
+				<input type="email" id="email" name="email" placeholder="Your email address" required>
+
+				<label for="phone">Phone Number </label>
+				<input type="tel" id="phoneNo" name="phoneNo" placeholder="Your phone number" title="Error Message" pattern="[1-9]{1}[0-9]{9}"> <br><br>
+				
+				<label for="dob">Condidate's Date of Birth </label>
+				<input type="date" title="As Per Adhaar" id="dob" name="dob" required>
+				<br><br>
+				<label for="gender">Gender</label>
+				<select id="gender" name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+				
+				<label for="address">Present Address</label>
+				<textarea id="address" title="As Per Adhaar" name="address" required></textarea>
+				
+				<div class="leftSide">
+				<label for="state">State </label>
+				<select id="state" name="state">
+					<option value="null">--Please select Your Present State--</option>
+					<option value="ap">Andhra Pradesh</option>
+					<option value="tn">Tamil Nadu</option>
+					<option value="ka">Karnataka</option>
+					<option value="kl">Kerela</option>
+					<option value="ts">Telangana</option>
+				</select>
+				</div>
+				
+				<div class="rightSide">
+				<label for="country">Region/Country </label>
+				<select id="country" name="country">
+					<option value="null">--Please select Your Region/Country--</option>
+					<option value="ind">India</option>
+					<option value="nri">NRI(Others)</option>
+				</select>
+				</div>
+				
+				<label for="program">Program </label>
+				<select id="program" name="program">
+					<option value="null">--Please select a preferred Program--</option>
+					<option value="b.tech">B.Tech</option>
+					<option value="msc">MSc</option>
+					<option value="phd">PhD</option>
+					<option value="mca">MCA</option>
+					<option value="degree">Degree</option>
+				</select>
+				
+				<label for="Dept">Department </label>
+				<select id="Dept" name="Dept" >
+					<option value="null">--Please select a preferred Department--</option>
+					<option value="ece">ECE</option>
+					<option value="cse">CSE</option>
+					<option value="civil">CIVIL</option>
+					<option value="mech">MECH</option>
+					<option value="eee">EEE</option>
+					<option value="chem">CHEM</option>
+					<option value="it">IT</option>
+					<option value="eie">EIE</option>
+					<option value="math">Mathematics</option>
+					<option value="science">Science</option>
+				</select><br><br>
+				
+				<label for="">Batch Year </label>
+				<input type="number" id="batchYear" name="batchYear" placeholder="your batch Year please" value="2023" min="2022" max="2023" required><br><br>
+				
+				<label for="year">Year of Study </label>
+				<input type="number" id="year" name="year" min="1" max="5" value="4" required>
+		
+				<label for="gpa">GPA </label>
+				<input type="number" id="gpa" name="gpa" min="0" max="10" step="0.01" required>
+				<br><br><br>
+				
+				<div class="leftSide">
+				<label for="xMarkSheet">X Marksheet :</label>
+				<input type="file" id="xMarkSheet" name="xMArkSheet" accept=".pdf,.doc,.docx">
+				</div>
+				
+				<div class="rightSide" >
+				<label for="xiiMarkSheet">XII Marksheet :</label>
+				<input type="file" id="xiiMarkSheet" name="xiiMArkSheet" accept=".pdf,.doc,.docx">
+				</div>
+				<br><br><br>
+				<div class="leftSide">
+				<label for="resume">Resume/Achievements :</label>
+				<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+				</div>
+				
+				<div class="rightSide">
+				<label for="photo">Photo  :</label>
+				<input type="file" id="photo" name="photo" accept="image/*">
+				</div>
+				<br><br><br>
+				<label for="remarks">Remarks </label>
+				<textarea id="remarks" name="remarks" placeholder="Enter any additional Remarks or requests here...">
+				</textarea>
+			</fieldset>
+			</div>
+		<br><br>
+		<input type="submit" value="Submit the Application">
+	</form>
+	<div class="footer">
+        
+        <b><br><br>@Copyright Teja-pt7068 </b> <b>2023- All Right Reserved. </b> 
+        </div>
+</body>
+</html>
