@@ -1,4 +1,4 @@
-# StudentAdmissionForm
+# StudentAdmissionForm(with pure HTML and CSS)
 
 // index.html will have the login of a student to access the admisssion form
 
